@@ -1,0 +1,11 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff0000;
+  padding: 10px 20px;
+  cursor: pointer;
+  span {
+    color: #ffffff;
+  }
+}

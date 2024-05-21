@@ -1,0 +1,117 @@
+@import '../Sass/variables.scss';
+@import '../Sass/mixins.scss';
+
+.nav {
+  display: flex;
+  flex-wrap: wrap; // Enables wrapping for smaller screens
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  &__menu {
+    cursor: pointer;
+    width: 40px;
+  }
+
+  &__links {
+    display: none; // By default, links are hidden
+    flex-direction: column;
+    width: 100%; // Take up full width
+    font-size: 20px;
+    gap: 10px;
+    margin-top: 30px;
+
+    & > li {
+      text-align: center;
+      background-color: $lavender-light;
+      padding: 13px 20px;
+      border-radius: 10px;
+      color: $off-white;
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    display: block; // Ensures links are displayed as a block
+  }
+
+  &__cta {
+    display: none; // Hide CTA on mobile
+  }
+
+  &__links.open {
+    display: flex; // Show links when menu is open
+  }
+
+  &__link--dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Align to the start
+    position: relative; // Make sure dropdown is positioned relative to this div
+  }
+
+  &__link--dropdown-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  // Larger screen styles
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      gap: 50px;
+      margin-top: 0;
+
+      & > li {
+        text-align: left;
+        padding: 0;
+        border-radius:0;
+        color: $black;
+        background-color: transparent; 
+        cursor: pointer;
+      }
+    }
+
+    &__menu {
+      display: none; // Hide hamburger on larger screens
+    }
+
+    &__cta {
+      @include button-cta;
+    }
+
+    &__cta:hover {
+      background-color: $purple-intense;
+      color: $off-white;
+    }
+
+    &__cta:active {
+      box-shadow: none;
+    }
+
+    &__link--dropdown-content {
+      display: none; // By default, dropdown content is hidden
+      position: absolute; // Absolutely position the dropdown content
+      top: 100%; // Position it right below the dropdown button
+      left: 0; // Align to the left
+      background-color: $purple-intense;
+      width: 100%;
+      padding: 5px 20px;
+      color: $off-white;
+    }
+  
+    &__link--dropdown-item {
+      cursor: pointer;
+      padding-top: 10px;
+    }
+
+    &__link--dropdown-content.open {
+      display: block; // Show dropdown content when it's open
+    }
+  }
+}

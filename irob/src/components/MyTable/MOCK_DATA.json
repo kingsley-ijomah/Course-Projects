@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "plc_name": "IP Addressing - Zone 1 LH & RH",
+    "progress": "40%"
+  },
+  {
+    "id": 2,
+    "plc_name": "IP Addressing - Zone 232 HB",
+    "progress": "6%"
+  },
+  {
+    "id": 3,
+    "plc_name": "IP Addressing - Zone 109 LM",
+    "progress": "5%"
+  },
+  {
+    "id": 4,
+    "plc_name": "IP Address - Zone 2 TH",
+    "progress": "12%"
+  },
+  {
+    "id": 5,
+    "plc_name": " REACT - Zone 12 CD",
+    "progress": "46%"
+  },
+  {
+    "id": 6,
+    "plc_name": "REDUX Addressing - Zone 37",
+    "progress": "61%"
+  },
+  {
+    "id": 7,
+    "plc_name": "POSTMAN Addressing - Zone 12 LH & RH",
+    "progress": "11%"
+  },
+  {
+    "id": 8,
+    "plc_name": "IP Addressing YPH",
+    "progress": "22%"
+  },
+  {
+    "id": 9,
+    "plc_name": "IP Addressing - JYP Entertainment",
+    "progress": "56%"
+  },
+  {
+    "id": 10,
+    "plc_name": "IP Addressing - Zone 25 LH & E.X.0",
+    "progress": "19%"
+  },
+
+  {
+    "id": 12,
+    "plc_name": "REACT Addressing - Zone 273",
+    "progress": "0%"
+  },
+  {
+    "id": 13,
+    "plc_name": "IP Addressing - Zone 918 LYP",
+    "progress": "100%"
+  },
+  {
+    "id": 14,
+    "plc_name": "IP Addressing - Zone 293 MNO",
+    "progress": "98%"
+  },
+  {
+    "id": 15,
+    "plc_name": "IP Addressing - Zone 242 LH & RH",
+    "progress": "24%"
+  },
+  {
+    "id": 16,
+    "plc_name": "IP Addressing - Z=Flip LH & RH",
+    "progress": "49%"
+  },
+  {
+    "id": 17,
+    "plc_name": "IP Addressing - Zone Absolute",
+    "progress": "67%"
+  },
+  {
+    "id": 18,
+    "plc_name": "FLSHK PlateModule",
+    "progress": "20%"
+  },
+  {
+    "id": 19,
+    "plc_name": "HJK PLC plate number 478 LY",
+    "progress": "30%"
+  },
+  {
+    "id": 20,
+    "plc_name": "FLS Plate End Module ",
+    "progress": "84%"
+  }
+]

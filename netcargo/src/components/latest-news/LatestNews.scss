@@ -1,0 +1,66 @@
+.news {
+  flex-direction: row;
+
+.news__header {
+    padding-top: 60px;
+    padding-bottom: 0;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    padding-top: 25px;
+  }
+
+  &__line {
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 15px; 
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+    color: #555555;
+    padding-bottom: 15px;
+  }
+
+  .newsspan {
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+  }
+.carousel {
+  display: flex;
+  gap: 2px;
+}
+.news__container {
+  position: relative;
+  margin: 3%;
+  height: fit-content;
+  width: auto;
+  
+    figcaption {
+      color: #555555;
+      text-align: center;
+    }
+    h3 {
+      position: absolute;
+      top: 1px;
+      left: 5px;
+      color: white;
+      background-color: red; 
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}

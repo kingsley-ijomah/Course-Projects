@@ -1,0 +1,21 @@
+@import '../Sass/variables.scss';
+
+.payment {
+  background-color: $off-lilac;
+  margin-top: 60px;
+  padding: 40px 0;
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__images {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

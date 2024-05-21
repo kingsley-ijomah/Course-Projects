@@ -1,0 +1,40 @@
+@import 'variables';
+
+@mixin shadow {
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+}
+
+@mixin button-cta($bgColor: $lavender-light, $padding: 13px 20px, $fontSize: 20px) {
+  font-family: "Rasa-Bold";
+  display: block;
+  background-color: $bgColor;
+  padding: $padding;
+  font-weight: bold;
+  font-size: $fontSize;
+  border-radius: 10px;
+  @include shadow;
+}
+
+@mixin testimonial($svgColor: $lavender-light, $h1Color: $purple-intense, $bgColor: $off-white, $textColor: $off-white) {
+  border: 2px $black solid;
+  padding: 15px 30px;
+  border-radius: 10px;
+  svg {
+    width: 25px;
+    fill: $svgColor;
+  }
+  h1 {
+    color: $h1Color;
+  }
+  address {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: $textColor;
+  }
+  p {
+    font-size: 15px;
+    color: $textColor;
+  }
+  background-color: $bgColor;
+  @include shadow;
+}

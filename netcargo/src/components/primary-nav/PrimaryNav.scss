@@ -1,0 +1,137 @@
+.primarynav {
+  margin-bottom: 60px;
+  // border: 1px red dotted;
+
+  &__container {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
+    grid-template-rows: repeat(3, min-content);
+    margin-top: 50px;
+  }
+
+  &__lblock {
+    display: flex;
+    align-items: start;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    img {
+      width: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__hamburger {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+
+    img {
+      width: 50px;
+      object-fit: cover;
+      padding-right: 20px;
+    }
+  }
+
+  &__links {
+    display: none;
+    grid-row: 2 /3;
+    grid-column: 1 / 4;
+    background-color: #0c1239;
+    text-transform: capitalize;
+    line-height: 45px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Montserrat Med";
+
+    li {
+      border-bottom: 1px rgb(54, 53, 53) solid;
+      padding-left: 20px;
+    }
+  }
+
+  &__contact {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: #0c1239;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &__toggle:checked ~ &__links {
+    display: block;
+  }
+
+  &__btn {
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ff0000;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+    }
+    span {
+      font-family: "Open Sans";
+      font-size: 15px;
+      color: #ffffff;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__btn {
+      display: none; // button hidden if size 576px or less
+    }
+  }
+
+  @media screen and (min-width: 577px) {
+    &__container {
+      // max-width: 1000px;
+      margin-top: 0;
+      grid-template-columns: min-content 1fr max-content;
+      grid-template-rows: repeat(2, min-content);
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__lblock {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      img {
+        width: 230px;
+        object-fit: cover;
+      }
+    }
+
+    &__links {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      display: inline;
+      ul {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        color: #0c1239;
+        font-size: 12px;
+      }
+    }
+
+    &__btn {
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+    }
+
+    &__contact {
+      grid-row: 1 / 2;
+      grid-column: 1 / 4;
+    }
+  }
+}

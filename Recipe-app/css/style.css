@@ -1,0 +1,134 @@
+.container {
+  max-width: 400px;
+  padding: 10px;
+  border: 1px lightgray solid;
+}
+
+nav {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+
+nav a {
+  font-size: 30px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:first-child {
+  text-decoration: underline;
+  color: green;
+}
+
+nav a:hover {
+  color: green;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.search_field {
+  width: 80%;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.search_field:focus {
+  outline: none;
+}
+
+.search_field::placeholder {
+  color: lightgray;
+}
+
+.search_btn {
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  margin: 0;
+}
+
+.hero p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.recipe {
+  max-width: 190px;
+}
+
+.recipe img {
+  border-radius: 10px;
+}
+
+.recipe h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: Arial;
+  color: gray;
+}
+
+.recipe p {
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: Arial;
+  color: lightgray;
+}
+
+.recipe_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  padding: 5px 5px 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}

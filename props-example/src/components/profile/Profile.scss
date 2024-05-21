@@ -1,0 +1,22 @@
+.profile {
+  text-align: center;
+  max-width: 300px;
+  background-color: antiquewhite;
+  padding: 20px 0;
+  margin-bottom: 30px;
+
+  h3 {
+    color: green;
+  }
+
+  img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  div {
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,97 @@
+@import '../Sass/variables';
+@import '../Sass/mixins';
+
+.footer {
+  background-color: $black;
+  padding: 40px 0;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__subscribeField {
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 0 150px 0 20px;
+    box-sizing: border-box;
+  }
+
+  &__subscribeField:focus {
+    outline: none;
+  }
+
+  &__subscribeWrap {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__subscribeBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    @include button-cta($padding: 6px 15px, $fontSize: 19px);
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__linksTitle {
+    font-family: 'Inter-Bold';
+    color: $white;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  &__linksBlock {
+    width: 50%; // 2 columns with wrap on mobile
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__socialWrap {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__copyright {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    border-top: 1px solid $white;
+    margin-top: 50px;
+    color: $white;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__linksBlock {
+      width: auto; // remove 2 columns from mobile
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 60px;
+    }
+
+    &__subscribeWrap {
+      width: 400px;
+    }
+  }
+}

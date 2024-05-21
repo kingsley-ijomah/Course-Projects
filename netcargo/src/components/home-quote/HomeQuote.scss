@@ -1,0 +1,159 @@
+.homequote {
+  &__container {
+    padding-left: 20px;
+  }
+
+  &__lblock {
+    margin-bottom: 80px;
+  }
+
+  &__heading {
+    font-family: "Montserrat Med";
+    font-size: 36px;
+  }
+  span {
+    display: block;
+    color: red;
+    font-family: "Montserrat Med";
+    padding-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__cardimages {
+    // border: 1px darkturquoise dotted;
+    // padding-top: 20px;
+    img {
+      width: 30px;
+      object-fit: contain;
+    }
+
+    .supply,
+    .support,
+    .tracking,
+    .goods {
+      border: 1px gray solid;
+      border-radius: 50px;
+      margin-bottom: 70px;
+      width: 55px;
+      height: 55px;
+      // padding-top: 20px;
+    }
+  }
+
+  .vertical-line {
+    border: none;
+    border-left: 1px solid black;
+    height: 100px;
+    width: 0;
+    margin: 40px;
+
+    transform: rotate(360deg);
+    transform-origin: left top;
+    // padding-bottom: 40px;
+  }
+
+  &__cardtext {
+    // border: 1px blue dotted;
+    margin-left: 70px;
+
+    .title {
+      font-family: "Open Sans";
+      font-size: 20px;
+      padding-bottom: 15px;
+      padding-top: 20px;
+    }
+    .descrip {
+      font-family: "Open Sans";
+      color: grey;
+      font-size: 12px;
+    }
+  }
+
+  &__rblock {
+    background-color: whitesmoke;
+    // margin: 0 auto;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    input {
+      height: 40px;
+    }
+
+    input:nth-child(5) {
+      height: 180px;
+    }
+  }
+
+  &__privacyterms {
+    margin-left: 50px;
+    margin-right: 50px;
+    p {
+      font-family: "Open Sans";
+      color: grey;
+      font-size: 12px;
+    }
+  }
+
+  .privacyapproval {
+    background-color: rgb(69, 81, 246);
+    border: 1px solid;
+    width: 180px;
+
+    p {
+      font-family: "Open Sans";
+      color: whitesmoke;
+      font-size: 10px;
+      padding: 5px 0px 5px 10px;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #ff0000;
+    padding: 10px 90px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: "Open Sans";
+    font-size: 10px;
+    border: none;
+  }
+
+  @media screen and (min-width: 577px) {
+  }
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .secondary_heading {
+    margin-left: 50px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+
+    // input {
+    //   height: 40px;
+    // }
+
+    input:nth-child(2) {
+      width: 50%;
+    }
+
+    input:nth-child(3) {
+      width: 50%;
+    }
+  }
+}

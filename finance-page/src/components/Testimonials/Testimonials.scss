@@ -1,0 +1,60 @@
+@import '../Sass/variables';
+@import '../Sass/mixins';
+
+.testimonials {
+  margin: 50px 0;
+  padding: 0 25px;
+
+  &__title {
+    font-family: 'Rasa-Bold';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-family: 'Inter-Regular';
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    h1 {
+      font-family: "Inter-Regular";
+      font-size: 20px;
+    }
+
+    &--light {
+      @include testimonial($lavender-light, $purple-intense, $off-white, $black);
+    }
+
+    &--dark {
+      @include testimonial($white, $black, $lilac, $off-white);
+    }
+  }
+
+  &__ratingWrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      overflow-x: hidden;
+    } 
+
+    &__item {
+      min-width: 600px;
+    }
+  }
+}

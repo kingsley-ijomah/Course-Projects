@@ -1,0 +1,15 @@
+.telephone {
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    height: 30px;
+  }
+
+  &__more {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+}

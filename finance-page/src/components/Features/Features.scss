@@ -1,0 +1,57 @@
+@import '../Sass/variables';
+@import '../Sass/mixins';
+
+.features {
+  margin: 70px 0;
+
+  h1 {
+    font-family: 'Rasa-Bold';
+    font-size: 40px;
+    margin-bottom: 30px;
+    span {
+      position: relative;
+      div {
+        position: absolute;
+        width: 110%;
+        right: -8px;
+        bottom: 10px;
+        z-index: -1;
+        border-bottom: 8px solid $lavender-light;
+      }
+    }
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid $black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @include shadow;
+
+    p {
+      font-size: 28px;
+    }
+  }
+
+  &__circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $purple-intense;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      min-width: 500px;
+    }
+  }
+}

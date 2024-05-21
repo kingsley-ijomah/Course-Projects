@@ -1,0 +1,52 @@
+.logistics {
+  background-color: rgba(12, 18, 57, 1);
+  display: flex;
+
+  &__logo {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.testimonials {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+
+  .testimonial__slide {
+    position: relative;
+    width: 100%;
+    height: 600px; // Adjust height as needed
+    background-size: cover;
+    background-position: center;
+
+    .testimonial__content {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      max-width: 550px;
+      z-index: 1000;
+      padding: 20px;
+      border: 1px solid #232951;
+    }
+
+    .testimonial__text {
+      color: white;
+      font-size: 22px;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+
+    .testimonial__name {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .testimonial__jobtitle {
+      color: red;
+      font-size: 16px;
+    }
+  }
+}
